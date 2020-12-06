@@ -1,13 +1,134 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: linear-gradient(to bottom right, #a37b8d, #57435a); */
+  background-color: #eee;
+  background-repeat:no-repeat;
+  background-attachment : fixed; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.card{
+	  height: 90vh;
+    width: 90%;
+    /* background-image: linear-gradient(to bottom left, #7bc3c9, #a4cfc7); */
+    background-color: #5eb5c9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0.5px white;
+    max-width: 768px;
+    margin: 4vh auto;
+    background-image :url("./hill4.svg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: top;
+    background-position-y: 30%;
+    min-height: 620px;
+    max-height: 770px;
+}
+
+.nighttime{
+  background: #4c565f url("./hill4.svg");
+}
+
+
+.mainbox{
+  position: relative;
+  padding: 3.5vh;
+  color: white;
+  font-size: 22px;
+}
+
+.temperature{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  position: absolute;
+  padding: 10px;
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  margin-left: 4%;
+}
+
+.thermo{
+  margin-right: 12px;
+}
+
+i{
+  font-size: 30px;
+}
+
+.wi {
+  display: inline-block;
+  font-family: weathericons;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.info{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 244%;
+}
+
+.info-tile{
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 0 2.5px;
+  text-align: center;
+  color: white;
+  opacity: 0.75;
+}
+
+.info-text{
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+}
+
+.icon-tray{
+  position: absolute;
+  top: 14%;
+  right: 10%;
+  font-size: 100px;
+  color: white;
+}
+
+.wrapper{
+  display: flex;
+  font-size: 22px;
+  justify-content: space-between;
+}
+
+.day-length{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 3.5vh;
+  width: 80%;
+}
+
+.weather-len{
+  margin-right: 10px;
+}
+
+.outer-class{
+  position: relative;
+}
+
+.up{
+  text-transform: capitalize;
+}
+
+.fix{
+  width:20px;
 }
